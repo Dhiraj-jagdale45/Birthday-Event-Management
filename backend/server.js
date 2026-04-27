@@ -90,6 +90,9 @@ app.post("/api/appointments", async (req, res) => {
   }
 });
 
+app.get("/api/appointments", (req, res) => {
+  res.send("hello");
+})
 // Health check
 app.get("/", (req, res) => {
   res.json({ message: "🎉 Birthday Bumps API is running!" });
