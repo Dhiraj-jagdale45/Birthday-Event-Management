@@ -12,7 +12,7 @@ const app = express();
 // ── Middleware ──────────────────────────────────────────────
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://birthday-event-management-1kv2.onrender.com", //"http://localhost:5173"
     methods: ["GET", "POST"],
     credentials: true,
   }),
