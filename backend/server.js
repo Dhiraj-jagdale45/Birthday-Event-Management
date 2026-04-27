@@ -10,13 +10,14 @@ dotenv.config();
 const app = express();
 
 // ── Middleware ──────────────────────────────────────────────
-app.use(
-  cors({
-    origin: "https://birthday-event-management-1kv2.onrender.com", //"http://localhost:5173"
-    methods: ["GET", "POST"],
-    credentials: true,
-  }),
-);
+// app.use(
+//   cors({
+//     origin: "https://birthday-event-management-1kv2.onrender.com", //"http://localhost:5173"
+//     methods: ["GET", "POST"],
+//     credentials: true,
+//   }),
+// );
+app.use(cors());
 app.use(express.json());
 
 // ── MongoDB Connection ──────────────────────────────────────
