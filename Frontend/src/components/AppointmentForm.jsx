@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://birthday-event-management-backend.onrender.com";
 
 export default function AppointmentForm() {
   const [form, setForm] = useState({
