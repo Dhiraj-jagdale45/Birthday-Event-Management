@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const API_URL = "https://birthday-event-management-backend.onrender.com";
+const API_URL = import.meta.env.VITE_API_URL;
 
 export default function AppointmentForm() {
   const [form, setForm] = useState({
