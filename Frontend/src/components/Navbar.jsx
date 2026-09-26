@@ -374,7 +374,7 @@ export default function Navbar() {
         <div className="bb-topbar__right">
           <a href="#" >xyz@birthdaybumps.in</a>
           <a href="#" className="bb-topbar__phone">📞 12345 67890</a>
-          <a href="/contact" className="bb-topbar__appt">+ MAKE AN APPOINTMENT</a>
+          <Link to="/contact" className="bb-topbar__appt">+ MAKE AN APPOINTMENT</Link>
         </div>
       </div>
 
@@ -421,9 +421,9 @@ export default function Navbar() {
             )}
           </ul>
 
-          <a href="/contact" className="bb-nav__cta">
+          <Link to="/contact" className="bb-nav__cta">
             🎉 Book Now
-          </a>
+          </Link>
 
           {/* Hamburger */}
           <button
